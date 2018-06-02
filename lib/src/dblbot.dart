@@ -4,6 +4,8 @@ part of dbldart;
 class DblBot {
 	String _token = null;
 
+	Webhook webhook = new Webhook._internal();
+
 	DblBot([this._token]);
 
 	/// Updates the [Bot]'s information on DBL, given [serverCount].

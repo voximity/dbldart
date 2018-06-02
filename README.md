@@ -27,8 +27,20 @@ dbl.updateStats(myBot.guilds.length);
 ```
 or update them with an array of counts representing shards...
 ```dart
-dbl.updateStats(myBot.shards.map((s) => s.guilds.length));
+dbl.updateShardsStats(myBot.shards.map((s) => s.guilds.length));
 ```
+
+### Setting up webhooks to handle voting
+
+Just create the webhook within the bot instance...
+```dart
+await dbl.webhook.create(12345, "my password");
+
+dbl.webhook.onUserVote.listen((vote) {
+	print("user with id ${vote.userId} voted!")
+});
+```
+and register the address on DBL accordingly. In this instance, `http://yourip:12345` and set the password to `my password`.
 
 ### Getting resource information
 
