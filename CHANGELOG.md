@@ -1,3 +1,8 @@
+## 0.1.4
+
+- Fixes
+- Depend on Git-based http
+
 ## 0.1.3
 
 - README changes

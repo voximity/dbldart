@@ -12,7 +12,6 @@ class DblBot {
 	/// Updates the [Bot]'s information on DBL, given [serverCount].
 	Future<Null> updateStats(int serverCount) async {
 		final response = await (new _Route(this) + "bots" + "stats").post({"server_count": serverCount});
-		print(response.body);
 	}
 
 	/// Updates the [Bot]'s information on DBL, given [shards], a [List<int>] of server counts.
@@ -23,12 +22,12 @@ class DblBot {
 	/// Get a DBL-registered [User].
 	Future<User> getUser(Object id) async {
 		final response = await (new _Route(this) + "users" + id.toString()).get();
-		return new User._fromMap(jsonDecode(response.body));
+		return new User._fromMap(jsonDecode(await response.readAsString()));
 	}
 	
 	/// Get a [Bot] from DBL.
 	Future<Bot> getBot(Object id) async {
 		final response = await (new _Route(this) + "bots" + id.toString()).get();
-		return new Bot._fromMap(jsonDecode(response.body));
+		return new Bot._fromMap(jsonDecode(await response.readAsString()));
 	}
 }

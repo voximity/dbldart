@@ -1,5 +1,6 @@
 part of dbldart;
 
+/// The event data fired along with [Webhook] events.
 class VoteEvent {
 	/// The [Snowflake] representing the bot that received a vote.
 	Snowflake botId;
@@ -13,6 +14,7 @@ class VoteEvent {
 	VoteEvent._internal(this.botId, this.userId, this.query);
 }
 
+/// The DBL webhook listener.
 class Webhook extends _EventExhibitor {
 	HttpServer _server;
 
