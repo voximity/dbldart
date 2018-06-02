@@ -1,3 +1,7 @@
+## 0.1.3
+
+- README changes
+
 ## 0.1.2
 
 - Finalize full documentation for existing stuff

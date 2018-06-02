@@ -1,8 +1,10 @@
 # dbldart
 
+[![Pub](https://img.shields.io/pub/v/dbldart.svg)](https://pub.dartlang.org/packages/dbldart)
+
 A Discord Bot List API binding for Dart
 
-dbldart is a simple Discord Bot List API binding for Dart. No further explanation is needed.
+dbldart is a simple Discord Bot List API binding for Dart. It supports statistic updating, resource information fetching, and webhook vote monitoring. It is designed to be easy-to-use and easy to implement.
 
 ## Usage
 
@@ -18,6 +20,7 @@ or not...
 ```dart
 DblBot dbl = new DblBot();
 ```
+Not specifying a token will only grant access to API methods that don't require authorization.
 
 ### Updating bot stats
 
