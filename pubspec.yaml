@@ -1,8 +1,8 @@
 name: dbldart
 description: Discord Bot List API for Dart
-version: 0.0.1
-#homepage: https://www.example.com
-#author: vox <email@example.com>
+version: 0.1.1
+homepage: https://github.com/voximity/dbldart
+author: vox <0zanfran@gmail.com>
 
 environment:
   sdk: '>=1.20.1 <2.0.0'
