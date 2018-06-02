@@ -14,7 +14,7 @@ class Route {
 		http.get(url, headers: (headers ?? {})..addAll({"Authorization": client._token}));
 
 	Future<http.Response> post(Map<String, Object> data, [Map<String, Object> headers]) =>
-		http.post(url, body: data, headers: (headers ?? {})..addAll({"Authorization": client._token}));
+		http.post(url, body: jsonEncode(data), headers: (headers ?? {})..addAll({"Authorization": client._token, "Content-Type": "application/json"}));
 
 	String toString() => route;
 	Route operator +(String next) => this..route += "/$next";
