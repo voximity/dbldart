@@ -13,13 +13,13 @@ class VoteEvent {
 	VoteEvent._internal(this.botId, this.userId, this.query);
 }
 
-class Webhook extends EventExhibitor {
+class Webhook extends _EventExhibitor {
 	HttpServer _server;
 
 	/// Fired when a user votes for the bot.
-	EventStream<VoteEvent> onUserVote;
+	_EventStream<VoteEvent> onUserVote;
 	/// Fired when the developer uses the test vote function.
-	EventStream<VoteEvent> onTestVote;
+	_EventStream<VoteEvent> onTestVote;
 
 	Webhook._internal() {
 		onUserVote = createEvent();

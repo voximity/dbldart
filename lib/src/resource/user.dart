@@ -1,5 +1,6 @@
 part of dbldart;
 
+/// Social media information for a DBL [User] object.
 class SocialData {
 	/// The user's YouTube ID.
 	String youtube;

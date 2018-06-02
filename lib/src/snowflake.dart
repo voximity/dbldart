@@ -1,6 +1,8 @@
 part of dbldart;
 
+/// A class representing a Snowflake, a type of identifier.
 class Snowflake {
+	/// The integer ID representing the [Snowflake].
 	int id;
 
 	String toString() => id.toString();

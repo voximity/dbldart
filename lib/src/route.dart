@@ -1,6 +1,6 @@
 part of dbldart;
 
-class Route {
+class _Route {
 	static final String base = "https://discordbots.org/api";
 
 	String route = "";
@@ -8,7 +8,7 @@ class Route {
 
 	DblBot client;
 
-	Route([this.client]);
+	_Route([this.client]);
 
 	Future<http.Response> get([Map<String, Object> headers]) =>
 		http.get(url, headers: (headers ?? {})..addAll({"Authorization": client._token}));
@@ -17,5 +17,5 @@ class Route {
 		http.post(url, body: jsonEncode(data), headers: (headers ?? {})..addAll({"Authorization": client._token, "Content-Type": "application/json"}));
 
 	String toString() => route;
-	Route operator +(String next) => this..route += "/$next";
+	_Route operator +(String next) => this..route += "/$next";
 }

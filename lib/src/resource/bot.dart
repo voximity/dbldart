@@ -1,5 +1,6 @@
 part of dbldart;
 
+/// A class representing a DBL bot.
 class Bot {
 	/// The [Snowflake] representing this [Bot].
 	Snowflake id;

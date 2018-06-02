@@ -1,3 +1,7 @@
+## 0.1.2
+
+- Finalize full documentation for existing stuff
+
 ## 0.1.1
 
 - Add LICENSE
