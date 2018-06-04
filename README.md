@@ -8,11 +8,11 @@ dbldart is a simple Discord Bot List API binding for Dart. It supports a number 
 
 ## Features
 
-[x] Updating statistics
-[x] Fetching resources
-[x] Hosting webhooks for votes
-[x] Widget creation
-[ ] Various Discord library integration
+- [x] Updating statistics
+- [x] Fetching resources
+- [x] Hosting webhooks for votes
+- [x] Widget creation
+- [ ] Various Discord library integration
 
 ## Usage
 
