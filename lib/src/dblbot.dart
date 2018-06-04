@@ -10,14 +10,12 @@ class DblBot {
 	DblBot([this._token]);
 
 	/// Updates the [Bot]'s information on DBL, given [serverCount].
-	Future<Null> updateStats(int serverCount) async {
-		final response = await (new _Route(this) + "bots" + "stats").post({"server_count": serverCount});
-	}
+	Future<Null> updateStats(int serverCount) async =>
+		await (new _Route(this) + "bots" + "stats").post({"server_count": serverCount});
 
 	/// Updates the [Bot]'s information on DBL, given [shards], a [List<int>] of server counts.
-	Future<Null> updateShardsStats(List<int> shards) async {
+	Future<Null> updateShardsStats(List<int> shards) async =>
 		await (new _Route(this) + "bots" + "stats").post({"shards": shards});
-	}
 
 	/// Get a DBL-registered [User].
 	Future<User> getUser(Object id) async {

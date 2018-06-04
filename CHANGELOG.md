@@ -1,3 +1,9 @@
+## 0.1.5
+
+- Depend on Git-based http.git
+- Add widget support
+- README examples
+
 ## 0.1.4
 
 - Fixes

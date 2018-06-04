@@ -57,3 +57,16 @@ or get user information...
 User dblUser = dbl.getUser(80047598504783872);
 print(dblUser.social.twitterUrl);
 ```
+
+### Making widgets
+
+You can make a big widget...
+```dart
+LargeWidget widget = new LargeWidget(myBot.id);
+String url = widget.uri.toString();
+```
+or a small widget...
+```dart
+SmallWidget widget = new SmallWidget(myBot.id, SmallWidgetType.upvotes);
+String url = widget.uri.toString();
+```

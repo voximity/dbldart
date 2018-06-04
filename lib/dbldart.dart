@@ -13,3 +13,4 @@ part "src/snowflake.dart";
 part "src/webhook.dart";
 part "src/resource/bot.dart";
 part "src/resource/user.dart";
+part "src/resource/widget.dart";
