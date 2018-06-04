@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   http:
-    git: https://github.com/dart-lang/http.git
+    git: https://github.com/dart-lang/http
 
 dev_dependencies:
   test: ^0.12.0
