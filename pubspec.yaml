@@ -1,15 +1,13 @@
 name: dbldart
 description: Discord Bot List API for Dart
-version: 0.1.5
+version: 0.2.0
 homepage: https://github.com/voximity/dbldart
-author: vox <0zanfran@gmail.com>
+authors:
+  - vox <0zanfran@gmail.com>
+  - l7ssha <szymon.uglis@tuta.io>
 
 environment:
-  sdk: '>=1.20.1 <2.0.0'
+  sdk: '>=1.20.1 <3.0.0'
 
 dependencies:
   http:
-    git: https://github.com/dart-lang/http
-
-dev_dependencies:
-  test: ^0.12.0

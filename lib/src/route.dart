@@ -10,11 +10,11 @@ class _Route {
 
 	_Route([this.client]);
 
-	Future<http.Response> get([Map<String, Object> headers]) =>
+	Future<http.Response> get([Map<String, String> headers]) =>
 		http.get(url, headers: (headers ?? {})..addAll({"Authorization": client._token}));
 
 	Future<http.Response> post(Map<String, Object> data, [Map<String, Object> headers]) =>
-		http.post(url, jsonEncode(data), headers: (headers ?? {})..addAll({"Authorization": client._token, "Content-Type": "application/json"}));
+		http.post(url, body: jsonEncode(data), headers: (headers ?? {})..addAll({"Authorization": client._token, "Content-Type": "application/json"}));
 
 	String toString() => route;
 	_Route operator +(String next) => this..route += "/$next";

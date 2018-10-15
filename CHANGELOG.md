@@ -1,3 +1,8 @@
+## 0.2.0
+
+- Add dart 2.0 support
+- Add example
+
 ## 0.1.5
 
 - Depend on Git-based http.git

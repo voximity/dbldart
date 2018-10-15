@@ -77,15 +77,15 @@ class Bot {
 		bio = map["shortdesc"];
 		description = map["longdesc"];
 
-		tags = map["tags"].toList();
+		tags = map["tags"].cast<String>();
 		website = map["website"];
 		support = map["support"];
 
 		repository = map["github"];
 
-		owners = map["owners"].map((i) => new Snowflake(i)).toList();
+		owners = map["owners"].map((i) => new Snowflake(i)).toList().cast<Snowflake>();
 		invite = map["invite"];
-		approved = map["date"];
+		approved = DateTime.parse(map["date"]);
 		certified = map["certifiedBot"];
 		vanity = map["vanity"];
 		votes = map["points"];
