@@ -19,8 +19,8 @@ class _EventStream<T> extends Stream<T> {
 abstract class _EventExhibitor {
   final List<_EventStream> _events = [];
 
-  _EventStream createEvent() {
-    final event = new _EventStream();
+  _EventStream<VoteEvent> createEvent() {
+    final event = new _EventStream<VoteEvent>();
     _events.add(event);
 
     return event;

@@ -10,3 +10,5 @@ private/
 
 # Directory created by dartdoc
 doc/api/
+
+.idea/
